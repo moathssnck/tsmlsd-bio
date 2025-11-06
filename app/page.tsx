@@ -15,7 +15,7 @@ export default function BioLinks() {
   const [privacyOpen, setPrivacyOpen] = useState(false);
   const [securityOpen, setSecurityOpen] = useState(false);
 
-  const applink = "https://zaimsor.com?label=4d4308863d81bc2af1cef766d83aeb4a";
+  const applink = "/";
   const links = [
     { icon: Link, label: "تامين السيارات", href: applink },
     { icon: Link, label: "تأمين شامل", href: applink },
@@ -23,18 +23,29 @@ export default function BioLinks() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 py-12 px-4" dir="rtl">
+    <div
+      className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 py-12 px-4"
+      dir="rtl"
+    >
       <div className="max-w-md mx-auto">
-
         {/* Profile Section */}
         <div className="text-center mb-12">
           <div className="w-28 h-28 rounded-full bg-gradient-to-tr from-blue-600/20 to-blue-600/40 mx-auto mb-4 flex items-center justify-center shadow-xl border-2 border-blue-600 animate-fadeIn">
-            <img src="/images (1).jpeg" alt="logo" className="rounded-full object-cover w-full h-full" />
+            <img
+              src="/images (1).jpeg"
+              alt="logo"
+              className="rounded-full object-cover w-full h-full"
+            />
           </div>
           <h1 className="flex justify-center items-center text-3xl md:text-4xl font-extrabold text-foreground mb-2 animate-fadeIn">
-  تأمين السيارات
-  <img src="/verified.png" alt="verified" width={40} className="ml-2 my-2"/>
-</h1>
+            تأمين السيارات
+            <img
+              src="/verified.png"
+              alt="verified"
+              width={40}
+              className="ml-2 my-2"
+            />
+          </h1>
 
           <p className="text-muted-foreground text-lg md:text-xl animate-fadeIn">
             قارن الأسعار واكتشف أحدث العروض الحصرية
@@ -53,7 +64,9 @@ export default function BioLinks() {
               >
                 <div className="flex items-center justify-center gap-3">
                   <Icon className="w-5 h-5 text-blue-600 group-hover:scale-110 transition-transform" />
-                  <span className="text-gray-800 font-semibold text-lg">{link.label}</span>
+                  <span className="text-gray-800 font-semibold text-lg">
+                    {link.label}
+                  </span>
                 </div>
               </a>
             );
@@ -101,25 +114,37 @@ export default function BioLinks() {
           <div className="space-y-6 text-right leading-relaxed mt-4">
             {/* Sections */}
             <section>
-              <h3 className="text-lg font-semibold text-gray-800 mb-2">1. جمع المعلومات</h3>
+              <h3 className="text-lg font-semibold text-gray-800 mb-2">
+                1. جمع المعلومات
+              </h3>
               <p className="text-gray-600">
-                نحن نجمع المعلومات التي تقدمها لنا مباشرة عند استخدام خدماتنا، بما في ذلك الاسم وعنوان البريد الإلكتروني ومعلومات الاتصال الأخرى.
+                نحن نجمع المعلومات التي تقدمها لنا مباشرة عند استخدام خدماتنا،
+                بما في ذلك الاسم وعنوان البريد الإلكتروني ومعلومات الاتصال
+                الأخرى.
               </p>
             </section>
             <section>
-              <h3 className="text-lg font-semibold text-gray-800 mb-2">2. استخدام المعلومات</h3>
+              <h3 className="text-lg font-semibold text-gray-800 mb-2">
+                2. استخدام المعلومات
+              </h3>
               <p className="text-gray-600">
-                نستخدم المعلومات لتقديم وتحسين خدماتنا، والتواصل معك، وحماية أمن الموقع.
+                نستخدم المعلومات لتقديم وتحسين خدماتنا، والتواصل معك، وحماية أمن
+                الموقع.
               </p>
             </section>
             <section>
-              <h3 className="text-lg font-semibold text-gray-800 mb-2">3. حماية البيانات</h3>
+              <h3 className="text-lg font-semibold text-gray-800 mb-2">
+                3. حماية البيانات
+              </h3>
               <p className="text-gray-600">
-                نتخذ تدابير أمنية لحماية معلوماتك من الوصول غير المصرح به. نستخدم التشفير وبروتوكولات الأمان القياسية.
+                نتخذ تدابير أمنية لحماية معلوماتك من الوصول غير المصرح به.
+                نستخدم التشفير وبروتوكولات الأمان القياسية.
               </p>
             </section>
             <section>
-              <h3 className="text-lg font-semibold text-gray-800 mb-2">4. حقوقك</h3>
+              <h3 className="text-lg font-semibold text-gray-800 mb-2">
+                4. حقوقك
+              </h3>
               <p className="text-gray-600">
                 لديك الحق في الوصول إلى معلوماتك الشخصية وتصحيحها أو حذفها.
               </p>
@@ -127,7 +152,12 @@ export default function BioLinks() {
           </div>
 
           <div className="flex justify-end mt-6">
-            <Button className="bg-blue-600 hover:bg-blue-600-dark text-white" onClick={() => setPrivacyOpen(false)}>إغلاق</Button>
+            <Button
+              className="bg-blue-600 hover:bg-blue-600-dark text-white"
+              onClick={() => setPrivacyOpen(false)}
+            >
+              إغلاق
+            </Button>
           </div>
         </DialogContent>
       </Dialog>
@@ -155,13 +185,19 @@ export default function BioLinks() {
                 التشفير والأمان
               </h3>
               <p className="text-gray-600">
-                جميع البيانات الحساسة مشفرة عند النقل والتخزين باستخدام أحدث البروتوكولات.
+                جميع البيانات الحساسة مشفرة عند النقل والتخزين باستخدام أحدث
+                البروتوكولات.
               </p>
             </section>
           </div>
 
           <div className="flex justify-end mt-6">
-            <Button className="bg-blue-600 hover:bg-blue-600-dark text-white" onClick={() => setSecurityOpen(false)}>إغلاق</Button>
+            <Button
+              className="bg-blue-600 hover:bg-blue-600-dark text-white"
+              onClick={() => setSecurityOpen(false)}
+            >
+              إغلاق
+            </Button>
           </div>
         </DialogContent>
       </Dialog>
