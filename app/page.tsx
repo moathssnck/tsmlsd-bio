@@ -33,7 +33,7 @@ export default function BioLinks() {
           </div>
           <h1 className="flex justify-center items-center text-3xl md:text-4xl font-extrabold text-foreground mb-2 animate-fadeIn">
   تأمين السيارات
-  <img src="/verified.png" alt="verified" width={30} className="ml-2"/>
+  <img src="/verified.png" alt="verified" width={40} className="ml-2 my-2"/>
 </h1>
 
           <p className="text-muted-foreground text-lg md:text-xl animate-fadeIn">
