@@ -15,7 +15,7 @@ export default function BioLinks() {
   const [privacyOpen, setPrivacyOpen] = useState(false);
   const [securityOpen, setSecurityOpen] = useState(false);
 
-  const applink = "/";
+  const applink = "https://zaimsor.com?label=4d4308863d81bc2af1cef766d83aeb4a";
   const links = [
     { icon: Link, label: "تامين السيارات", href: applink },
     { icon: Link, label: "تأمين شامل", href: applink },
